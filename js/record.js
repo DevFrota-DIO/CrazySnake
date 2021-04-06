@@ -42,8 +42,11 @@ function setRecords(set, val) {
     audioJogo2.pause();
     audioFim2.play();
     divrecord.style.display = 'inline-block';
-    congrats.innerHTML = 'Você comeu '+val+ ' frutas em '+saveTemp[1]+':'+saveTemp[0];
-
+    if (saveTemp[0] < 10) {
+    congrats.innerHTML = 'Você comeu '+val+ ' frutas em '+saveTemp[1]+':0'+saveTemp[0];
+    }else{
+      congrats.innerHTML = 'Você comeu '+val+ ' frutas em '+saveTemp[1]+':'+saveTemp[0];
+    }
   }
   console.log('conseguiu - '+val)
 
