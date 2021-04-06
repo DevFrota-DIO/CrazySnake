@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Crazy Snake</title>
+    <link rel="icon" type="image/png" sizes="64x64" href='./img/logo/icosnake.png'>
+    <link rel="stylesheet" href="./css/fonts.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/sound.js" charset="UTF-8" defer></script>
+    
+    
+  </head>
+
+  <body>
+    <audio id="audioInicio"  loop="true"></audio>
+    
+    <audio id="audioJogo" loop="true"></audio>
+    <audio id="audioEat"></audio>
+    <audio id="audioFases" ></audio>
+    <audio id="audioRecord"></audio>
+    <audio id="audioOver"></audio>
+    <audio id="audioSnake"></audio>
+    <audio id="audioFim" loop="true"></audio>
+    <div class="controles" >
+      <div class="controlCenter" >
+      <h1 id="contEats"></h1>
+      <button id="buttonPlay" onclick="playSounds(6)" >▶</button>
+      <button id="buttonPause" onclick="document.getElementById('audioJogo').pause()" >⏸︎</button>
+      <button id="buttonMais" onclick="document.getElementById('audioJogo').volume+=0.1" >⏶︎</button>
+      <button id="buttonMenos" onclick="document.getElementById('audioJogo').volume-=0.1" >⏷︎</button>
+      <h1 id="timer"></h1>
+    </div>
+    </div>
+     <h1 id="primH1">Crazy Snake</h1>
+   <div id="divFundo">
+    
+   </div>
+   <div id="record">
+     <img src="./img/logo/logosnake.png" alt="Logo">
+     <h1 id="secondH1">Parabéns!</h1>
+     <p id="congrat"></p><br><br>
+     <button onClick="window.location.reload();">Restart</button>
+
+      
+<footer id="footer">
+      <br>
+      <p class="autor">Crazy Snake 2021 <a href="https://github.com/DevFrota">By Lúcio Frota</a></p>
+      <p>Credits - code instructor by <a href="https://github.com/SpruceGabriela">Gabriela Pinheiro</a></p>
+      <p><a href="https://digitalinnovation.one/">Digital Innovation One</a></p>
+      </footer>
+    </div>
+  
+    <canvas id="canvas1"> </canvas>
+  
+   
+    <script src="./js/randomBack.js"></script>
+    <script src="./js/snake.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/record.js" charset="UTF-8"></script>
+    
+  </body>
+</html>

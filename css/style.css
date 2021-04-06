@@ -1,0 +1,189 @@
+html, body {
+  margin: 0;
+}
+
+html {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  height: 100%;
+}
+
+body {
+  overflow: hidden;
+  height: inherit;
+}
+.controles
+{
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  top: 0px;
+  margin-left: auto;
+  margin-right: auto;
+
+  z-index: 22;
+
+}
+.controlCenter
+{
+  width: 40%;
+  height: 50px;
+  display: inline-flex;
+}
+.controles button
+{
+  cursor: pointer;
+  width: 5rem;
+  background-color: rgb(15, 63, 78);
+  color: aqua;
+  opacity: 0.5;
+}
+.controles button:hover
+{
+
+  background-color: rgb(15, 97, 42);
+  color: rgb(157, 255, 0);
+  opacity: 0.5;
+}
+#record
+{
+  display: none;
+  position: absolute;
+text-align: center;
+background-size: 100% 100%;
+width: 100%;
+height: 100%;
+top: 0px;
+left: 0px;
+background-color: rgb(22, 5, 2);
+z-index: 24;
+
+  
+}
+#record button
+{
+width: 100px;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+font-size: larger;
+background-color: rgb(78, 27, 19);
+color: rgb(177, 111, 100);
+cursor: pointer;
+}
+#record button:hover
+{
+background-color: rgb(148, 51, 36);
+color: rgb(240, 195, 188);
+}
+#record img
+{
+width: 150px;
+height: auto;
+display: flex;
+position: absolute;
+left: 10%;
+}
+#secondH1
+{
+  color: rgb(211, 166, 99);
+  font-family: 'Baby School';
+  font-size: 5rem;
+
+}
+#contEats
+{
+  width: 200px;
+  text-align: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: x-large;
+  font-weight: 600;
+  color: rgb(175, 159, 139);
+  margin: 0%;
+}
+#timer
+{
+  width: 200px;
+  text-align: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: x-large;
+  font-weight: 600;
+  color: rgb(175, 159, 139);
+  margin: 0%;
+}
+#congrat
+{
+  text-align: left;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: xx-large;
+  font-weight: 600;
+  color: rgb(175, 159, 139);
+  display: inline-block;
+
+}
+#canvas1
+{
+  position: absolute;
+z-index: 17;
+  
+}
+#divFundo
+{
+  
+  text-align: center;
+ position: absolute;
+  background-size: 100% 100%;
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  z-index:20;
+  opacity: 0.2;
+  animation-name: back;
+  animation-duration: 10s;
+  
+}
+@keyframes collors {
+  from {color: rgb(163, 81, 4);}
+  to {color: rgb(14, 3, 26);}
+  from {text-shadow: 4px 4px 6px rgb(249, 255, 216);}
+  to {text-shadow: 1px 1px 4px rgb(160, 244, 247);}
+
+}
+
+@keyframes back {
+  from {opacity:1;}
+  to {opacity: 0.2;}
+
+}
+
+#primH1 {
+  font-family: 'Baby School';
+  display: inline-block;
+  font-size: 3rem;
+  letter-spacing: 1px;
+  position: absolute;
+  top: -1rem;
+  left: 10%;
+  opacity: 0.5;
+color: rgb(10, 2, 19);
+  animation-name: collors;
+  animation-duration: 10s;
+  text-shadow: 0 0 4px rgb(160, 244, 247);
+  z-index: 21;
+}
+#footer {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  padding-bottom: 10px;
+  height: 150px;
+  text-align: center;
+  color: rgb(189, 177, 163);
+  background-color: rgb(150, 25, 6);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: medium;
+  text-decoration: none;
+}
+#footer a
+{
+color: rgb(231, 160, 119);
+text-decoration: none;
+}
