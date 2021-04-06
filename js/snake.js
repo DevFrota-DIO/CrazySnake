@@ -121,6 +121,7 @@ function criaSnake() {
       playSounds(5);
       playSounds(6);
       countRegres(1,0);
+      document.getElementById('aviso').style.display = 'none'
       for (let i = 1; i < snakeBody.length; i++) {
         snakeBody[i].velX = 14;
         snakeBody[i].velY = 0;
