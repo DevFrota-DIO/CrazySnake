@@ -63,6 +63,18 @@ body {
   color: rgb(184, 166, 142);
   text-align: center;
 }
+#dio
+{
+  /* background-image: url('../img/dio/dio1.jpg'); */
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  width: 90%;
+  height: 396px;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer;
+ 
+}
 #record
 {
   display: none;

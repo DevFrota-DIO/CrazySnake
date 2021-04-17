@@ -48,8 +48,5 @@ function setRecords(set, val) {
       congrats.innerHTML = 'Você comeu '+val+ ' frutas em '+saveTemp[1]+':'+saveTemp[0];
     }
   }
-  console.log('conseguiu - '+val)
-
-
   
 }
