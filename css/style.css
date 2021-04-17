@@ -77,9 +77,10 @@ body {
 }
 #record
 {
-  display: none;
-  position: absolute;
+display: none;
+position: absolute;
 text-align: center;
+background-image: url('../img/dio/fundo.png');
 background-size: 100% 100%;
 width: 100%;
 height: 100%;
@@ -94,10 +95,11 @@ z-index: 24;
 {
 width: 100px;
 font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-font-size: larger;
+font-size: x-large;
 background-color: rgb(78, 27, 19);
 color: rgb(177, 111, 100);
 cursor: pointer;
+border-radius: 5px;
 }
 #record button:hover
 {
